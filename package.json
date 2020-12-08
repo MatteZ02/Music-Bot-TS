@@ -1,0 +1,49 @@
+{
+    "name": "music-bot-ts",
+    "version": "4.6.1",
+    "description": "Discord Music Bot made with typescript",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "rimraf ./build && tsc",
+        "start": "npm run build && node build/index.js"
+    },
+    "author": "MatteZ02",
+    "license": "UNLICENSED",
+    "private": false,
+    "dependencies": {
+        "@discordjs/opus": "^0.3.3",
+        "@types/cheerio": "^0.22.22",
+        "@types/he": "^1.1.1",
+        "@types/mongodb": "^3.5.34",
+        "@types/ms": "^0.7.31",
+        "@types/node": "^14.14.10",
+        "@types/node-fetch": "^2.5.7",
+        "@types/request": "^2.48.5",
+        "@types/spotify-web-api-node": "^4.0.2",
+        "@types/ws": "^7.4.0",
+        "discord-webhook-node": "^1.1.8",
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "he": "^1.2.0",
+        "ms": "^2.1.2",
+        "prism-media": "^1.2.2",
+        "request": "^2.88.2",
+        "soundcloud-scraper": "git+https://github.com/MatteZ02/soundcloud-scraper.git",
+        "spotify-web-api-node": "^5.0.0",
+        "tsc-watch": "^4.2.9",
+        "typescript": "^3.9.7",
+        "ytdl-core": "^4.1.0",
+        "ytpl": "github:timeforaninja/node-ytpl#wip-api-adjustments",
+        "ytsr": "github:timeforaninja/node-ytsr#wip-api-adjustments"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.34.0",
+        "@typescript-eslint/parser": "^2.34.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "prettier": "^1.19.1",
+        "rimraf": "^3.0.2",
+        "ts-node": "^8.10.2"
+    }
+}
